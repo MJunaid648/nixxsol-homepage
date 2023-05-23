@@ -2,7 +2,7 @@
 
 Nixxsol Solutions is a visually appealing UI project created using Chakra UI, React Icons, and React. It serves as a homepage for Nixxsol Solutions, showcasing the company's services and providing information about its team and contact details.
 
-You can access the live site [here]([https://www.example.com](https://nixxsol.netlify.app/)).
+You can access the live site [here](https://nixxsol.netlify.app/).
 
 ## Table of Contents
 
