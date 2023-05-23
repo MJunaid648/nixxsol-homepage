@@ -1,0 +1,10 @@
+<Flex w="80%">
+              <Image src="./Rectangle 1394.png" alt="" />
+              <Box
+                position={"absolute"}
+                mt="14.8rem"
+                bgImage="url('/gamesBG.png')" bgPosition={'cover'} h={'10rem'} w={'auto'}
+              >,jn
+                {/* <Image position={"absolute"} mt="14.8rem" src="gamesBG.png" /> */}
+              </Box>
+            </Flex>
