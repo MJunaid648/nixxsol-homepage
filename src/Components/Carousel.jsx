@@ -1,11 +1,7 @@
 import {
   Flex,
   Box,
-  Text,
   Image,
-  Button,
-  Input,
-  Textarea,
 } from "@chakra-ui/react";
 
 const Carousel = () => {
@@ -29,7 +25,7 @@ const Carousel = () => {
     );
   });
   return (
-    <Flex p="5rem 10rem" gap="3rem" justifyContent={"center"}>
+    <Flex p="10rem 3rem" gap="3rem" justifyContent={'space-between'} >
       {cardsList}
     </Flex>
   );

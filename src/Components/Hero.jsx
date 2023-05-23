@@ -24,7 +24,7 @@ const Hero = () => {
     <Flex p="2rem 3rem" fontFamily={"sans-serif"}>
       <Flex direction={"column"} flex="1" justifyContent={"space-between"}>
         <Text
-          fontSize="80px"
+          fontSize="70px"
           fontWeight={800}
           bgClip={"text"}
           color={"transparent"}
@@ -44,7 +44,7 @@ const Hero = () => {
         justifyContent={"space-between"}
         gap={"2rem"}
       >
-        <Image src="./illustration.png" />
+        <Image alignSelf={'flex-end'} src="./illustration.png" boxSize={'28rem'}/>
         <Text fontSize={"32px"} fontFamily={"sans-serif"}>
           Lorem ipsum dolor sit amet consectetur. Vestibulum nascetur vitae
           sapien{" "}

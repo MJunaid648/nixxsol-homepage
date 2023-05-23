@@ -2,7 +2,6 @@ import {
   Flex,
   Box,
   Text,
-  Image,
   Button,
   Input,
   Textarea,
