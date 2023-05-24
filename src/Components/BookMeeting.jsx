@@ -1,11 +1,4 @@
-import {
-  Flex,
-  Box,
-  Text,
-  Button,
-  Input,
-  Textarea,
-} from "@chakra-ui/react";
+import { Flex, Box, Text, Button, Input, Textarea } from "@chakra-ui/react";
 
 const BookMeeting = () => {
   return (
@@ -41,7 +34,13 @@ const BookMeeting = () => {
           ornare nisl leo odio magna.
         </Text>
       </Flex>
-      <Flex flex="1" direction={"column"} gap="1rem" alignItems={"center"}>
+      <Flex
+        color={"white"}
+        flex="1"
+        direction={"column"}
+        gap="1rem"
+        alignItems={"center"}
+      >
         <Input type="text" placeholder="Name" />
         <Input type="email" placeholder="Email" />
         <Input type="tel" placeholder="Phone (Optional)" />
