@@ -11,14 +11,14 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <Flex direction="column" gap="2rem">
+    <Flex direction="column" gap={{base:"1rem",md:'2rem'}}>
       <Navbar />
-      <Hero />
+       <Hero />
       <Services />
-      <Testimonials />
+      {/* <Testimonials />
       <BookMeeting />
       <Carousel />
-      <Footer />
+      <Footer />  */}
     </Flex>
   );
 }

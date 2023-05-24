@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <Flex direction="column" bgColor={"#F8F8F8"} fontFamily={"sans-serif"}>
       <Box
-        h="15rem"
+        h={{ base: "auto", lg: "15rem" }}
         textAlign={"center"}
         p="1rem"
         background={
@@ -39,19 +39,37 @@ const Services = () => {
         </Text>
       </Box>
       <Flex
-        position={"absolute"}
-        mt="7rem"
+        position={{ base: "relative", lg: "absolute" }}
+        mt={{ base: "0", lg: "7rem" }}
         alignItems={"center"}
         justifyContent={"center"}
-        p="2rem 3rem"
+        p={{ base: "1rem", md: "2rem 3rem" }}
         flexWrap={"wrap"}
         gap="2rem"
       >
         {card} {card} {card} {card} {card} {card} {card} {card}
       </Flex>
-      <Flex gap={"1rem"} mt="28rem">
-        <Flex direction={"column"} flex="5" p={"2rem 0"} pl="3rem" gap="1rem">
-          <Text fontWeight={800} color="#242424" fontSize={"80px"}>
+      <Flex
+        direction={{ base: "column", lg: "row" }}
+        alignItems={{ base: "center", lg: "flex-start" }}
+        justifyContent={{ base: "center", md: "flex-start" }}
+        gap={"1rem"}
+        mt={{ base: "0", lg: "40rem" }}
+      >
+        <Flex
+          direction={"column"}
+          flex="5"
+          p={"2rem 0"}
+          pl="3rem"
+          gap="1rem"
+          alignItems={{ base: "center", lg: "flex-start" }}
+          justifyContent={{ base: "center", md: "flex-start" }}
+        >
+          <Text
+            fontWeight={800}
+            color="#242424"
+            fontSize={{ base: "30px", md: "40px", lg: "70px" }}
+          >
             Portfolio
           </Text>
           <Text w={"25rem"}>
@@ -59,7 +77,7 @@ const Services = () => {
             praesent elementum commodo.
           </Text>
           <Button
-            alignSelf={"flex-start"}
+            alignSelf={{ base: "center", lg: "flex-start" }}
             p="1.5rem"
             bgColor={"#E92129"}
             color="white"
@@ -69,13 +87,20 @@ const Services = () => {
             Contact Us
           </Button>
         </Flex>
-        <Flex flex="6" direction={"column"} pb="10rem" gap="1rem">
-          <Flex alignItems={"flex-end"} gap="1rem">
+        {/* iuugj */}
+        <Flex
+          flex="6"
+          direction={"column"}
+          // pb="10rem"
+          gap="1rem"
+          // border="2px solid red"
+        >
+          <Flex gap="1rem" p={{ base: "0rem", lg: "0rem" }}>
             <Flex
+              display={{ base: "none", lg: "flex" }}
               w="80%"
               bgImage="url('./Rectangle 1394.png')"
               bgPosition={"cover"}
-              h={"100%"}
               direction={"column-reverse"}
             >
               <Image
@@ -84,9 +109,21 @@ const Services = () => {
                 _hover={{ cursor: "pointer" }}
               />
             </Flex>
-            <Image w="20%" h="80%" src="./Rectangle 1395.png" alt="" />
+            <Image
+              display={{ base: "block", lg: "none" }}
+              // w="100%"
+              src="./gam.svg"
+            />
+            <Image
+              display={{ base: "none", lg: "block" }}
+              alignSelf={"flex-end"}
+              w="20%"
+              h="80%"
+              src="./Rectangle 1395.png"
+              alt=""
+            />
           </Flex>
-          <Flex gap="1rem" ml="30rem">
+          <Flex gap="1rem" alignSelf={"center"}>
             <Box gap="0.5rem" _hover={{ cursor: "pointer" }}>
               <MdKeyboardArrowLeft
                 style={{
@@ -111,11 +148,15 @@ const Services = () => {
         </Flex>
       </Flex>
       <Flex py="1rem" justifyContent={"center"} bgColor="black" gap="1rem">
-        <Image src="./image 8.png" />
-        <Image src="./image 9.png" />
-        <Image src="./image 10.png" />
-        <Image src="./image 11.png" />
-        <Image src="./image 12.png" />
+        <Image
+          w="18%"
+          display={{ base: "none", md: "block" }}
+          src="./image 8.png"
+        />
+        <Image w="18%" src="./image 9.png" />
+        <Image w="18%" src="./image 10.png" />
+        <Image w="18%" src="./image 11.png" />
+        <Image w="18%" src="./image 12.png" />
       </Flex>
     </Flex>
   );

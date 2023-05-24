@@ -1,0 +1,12 @@
+{{base:'',lg:''}}
+
+p={{ base: "1rem", md: "2rem 3rem" }}
+
+alignItems={{ base: "center", md: "flex-start" }}
+ justifyContent={{ base: "center", md: "flex-start" }}
+
+direction={{ base: "column", md: "row" }}
+
+textAlign={{ base: "center",md:'left' }}
+
+border="2px solid red"
