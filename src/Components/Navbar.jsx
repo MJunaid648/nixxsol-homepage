@@ -7,12 +7,12 @@ const Navbar = () => {
       p={{ base: "1rem", md: "2rem" }}
       justifyContent="space-between"
       alignItems="center"
-      flexDirection={{ base: "column", md: "row" }}
+      flexDirection={{ base: "column", md: "row" }} 
     >
       <Image w="100%" maxWidth="300px" src="./logo.svg" alt="logo" />
       <Flex
         mt={{ base: "1rem", md: "0" }}
-        gap={{ base: "1rem", md: "2rem" }}
+        gap={{ base: "0.3rem", md: "2rem" }}
         alignItems="center"
       >
         <Text fontSize="14px"  _hover={{ cursor: "pointer" }}>About</Text>
@@ -22,6 +22,7 @@ const Navbar = () => {
           </Text>
           <Box>
             <MdKeyboardArrowDown
+             
               style={{
                 backgroundColor: "#E92129",
                 color: "white",

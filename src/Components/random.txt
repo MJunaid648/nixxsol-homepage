@@ -10,3 +10,79 @@ direction={{ base: "column", md: "row" }}
 textAlign={{ base: "center",md:'left' }}
 
 border="2px solid red"
+
+_hover={{cursor:'pointer'}}
+
+<Flex
+        direction={{ base: "column-reverse", md: "row" }}
+        gap={{ base: "2rem", md: "0" }}
+        bgColor="black"
+        color="white"
+        pt="5rem"
+        pb="3rem"
+        p={{ base: "1rem", md: "2rem 3rem" }}
+        border="2px solid teal"
+        alignItems={{ base: "stretch", md: "stretch" }}
+        justifyContent={{ base: "stretch", md: "stretch" }}
+      >
+        {/* phone email address */}
+        <Flex
+          flex="1"
+          direction="column"
+          gap="1rem"
+          // border="2px solid red"
+          // alignItems={"center"}
+        >
+          <Flex alignItems={"center"} gap="1rem">
+            <BsTelephoneFill style={{ fontSize: "22px" }} />
+            <Text>+92 300 1234567</Text>
+          </Flex>
+          <Flex alignItems={"center"} gap="1rem">
+            <MdMail style={{ fontSize: "22px" }} />
+            <Text>info@nixxsol.com</Text>
+          </Flex>
+          <Flex alignItems={"center"} gap="1rem">
+            <HiLocationMarker style={{ fontSize: "22px" }} />
+            <Text w="50%">
+              Lorem ipsum dolor sit amet consectetur. Dui libero lectus pulvinar
+              mattis a.
+            </Text>
+          </Flex>
+        </Flex>
+        {/* stay in connection */}
+        <Flex
+          flex="1"
+          direction={"column"}
+          gap="1rem"
+          // border="2px solid blue  "
+        >
+          <Flex justifyContent={"space-between"}>
+            <Text _hover={{ cursor: "pointer" }}>About</Text>
+            <Text _hover={{ cursor: "pointer" }}>Services</Text>
+            <Text _hover={{ cursor: "pointer" }}>Portfolio</Text>
+            <Text _hover={{ cursor: "pointer" }}>Contact us</Text>
+          </Flex>
+          <Text fontWeight={700} fontSize={"24px"} mt="1rem">
+            Stay in Conection
+          </Text>
+          <Flex
+            bgColor={"#272727"}
+            p="0.5rem"
+            borderRadius={"8px"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            gap="0.5rem"
+          >
+            <Input type="text" placeholder="Email Address" border="none" />
+            <Button
+              p="0.5rem 1rem"
+              bgColor={"#E92129"}
+              color="white"
+              _hover={{ backgroundColor: "" }}
+            >
+              {" "}
+              Contact Us
+            </Button>
+          </Flex>
+        </Flex>
+      </Flex>

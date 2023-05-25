@@ -1,28 +1,28 @@
-import {
-  Flex,
-  Text,
-  Image,
-  Button,
-  Input,
-} from "@chakra-ui/react";
+import { Flex, Text, Image, Button, Input } from "@chakra-ui/react";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
 
-import { MdEmail, MdMail } from "react-icons/md";
+import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <Flex direction="column">
-      <Flex position={"absolute"} mt="-7rem">
-        <Image w="45rem" src="./Frame 48096261.svg" />
+    <Flex direction="column" border="2px solid red">
+      <Flex
+        display={{ base: "none", md: "block" }}
+        position={{ base: "relative", md: "absolute" }}
+        mt={{ base: "-4rem" }}
+      >
+        <Image w="65%" src="./Frame 48096261.svg" />
       </Flex>
       <Flex
+        direction={{ base: "column-reverse", md: "row" }}
+        gap={{ base: "2rem", md: "0" }}
         bgColor="black"
         color="white"
-        pt="5rem"
-        pb="3rem"
-        px="3rem"
-        alignItems={"center"}
+        p={{ base: "1rem", md: "5rem 3rem" }}
+        border="2px solid teal"
+        alignItems={{ base: "stretch", md: "stretch" }}
+        justifyContent={{ base: "stretch", md: "stretch" }}
       >
         {/* phone email address */}
         <Flex flex="1" direction="column" gap="1rem">
@@ -75,17 +75,19 @@ const Footer = () => {
         </Flex>
       </Flex>
       <Flex
+        direction={{ sm: "row", md: "row" }}
         color={"white"}
         bgColor={"#E4252C"}
-        py="1.5rem"
-        px="3rem"
+        p={{ base: "1rem", md: "1.5rem 3rem" }}
         justifyContent={"space-between"}
       >
-        <Text>© 2022 Nixxsol All Rights Reserved.</Text>
+        <Text fontSize={{ base: "12px", md: "14px" }}>
+          © 2022 Nixxsol All Rights Reserved.
+        </Text>
         <Flex gap="1rem">
-          <Image src="./fb.svg"></Image>
-          <Image src="./insta.svg"></Image>
-          <Image src="./twitter.svg"></Image>
+          <Image src="./fb.svg" boxSize={{ base: "1rem", md: "1.3rem" }} />
+          <Image src="./insta.svg" boxSize={{ base: "1rem", md: "1.3rem" }} />
+          <Image src="./twitter.svg" boxSize={{ base: "1rem", md: "1.3rem" }} />
         </Flex>
       </Flex>
     </Flex>

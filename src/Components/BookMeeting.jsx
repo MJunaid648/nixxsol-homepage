@@ -3,7 +3,9 @@ import { Flex, Box, Text, Button, Input, Textarea } from "@chakra-ui/react";
 const BookMeeting = () => {
   return (
     <Flex
-      p="5rem 3rem"
+      // p="5rem 3rem"
+      p={{ base: "1rem", md: "5rem 3rem" }}
+      direction={{ base: "column", md: "row" }}
       gap="5rem"
       background={
         "linear-gradient(120.79deg,  #242424,#242424, #242424, #242424 , #E92129)"
@@ -21,10 +23,11 @@ const BookMeeting = () => {
           <Box w={"3rem"} borderBottom={"2px solid white"}></Box>
         </Flex>
         <Text
-          lineHeight={"5rem"}
+          lineHeight={{ lg: "5rem" }}
           fontWeight={800}
-          fontSize={"70px"}
+          fontSize={{ base: "30px", md: "40px", lg: "70px" }}
           color="#FFFF"
+          textAlign={{ base: "center", md: "left" }}
         >
           Book a meeting with us
         </Text>

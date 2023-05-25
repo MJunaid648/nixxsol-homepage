@@ -15,10 +15,10 @@ function App() {
       <Navbar />
        <Hero />
       <Services />
-      {/* <Testimonials />
-      <BookMeeting />
-      <Carousel />
-      <Footer />  */}
+       <Testimonials />
+     <BookMeeting />
+       <Carousel />
+     <Footer /> 
     </Flex>
   );
 }

@@ -25,7 +25,12 @@ const card = (
 
 const Services = () => {
   return (
-    <Flex direction="column" bgColor={"#F8F8F8"} fontFamily={"sans-serif"}>
+    <Flex
+      direction="column"
+      bgColor={"#F8F8F8"}
+      fontFamily={"sans-serif"}
+      gap="1rem"
+    >
       <Box
         h={{ base: "auto", lg: "15rem" }}
         textAlign={"center"}
@@ -72,7 +77,7 @@ const Services = () => {
           >
             Portfolio
           </Text>
-          <Text w={"25rem"}>
+          <Text maxW={"25rem"} overflowWrap={"break-word"}>
             Lorem ipsum dolor sit amet consectetur. Nunc viverra faucibus
             praesent elementum commodo.
           </Text>
@@ -88,13 +93,7 @@ const Services = () => {
           </Button>
         </Flex>
         {/* iuugj */}
-        <Flex
-          flex="6"
-          direction={"column"}
-          // pb="10rem"
-          gap="1rem"
-          // border="2px solid red"
-        >
+        <Flex flex="6" direction={"column"} gap="1rem">
           <Flex gap="1rem" p={{ base: "0rem", lg: "0rem" }}>
             <Flex
               display={{ base: "none", lg: "flex" }}
@@ -111,8 +110,8 @@ const Services = () => {
             </Flex>
             <Image
               display={{ base: "block", lg: "none" }}
-              // w="100%"
               src="./gam.svg"
+              _hover={{ cursor: "pointer" }}
             />
             <Image
               display={{ base: "none", lg: "block" }}
