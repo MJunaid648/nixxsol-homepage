@@ -49,7 +49,12 @@ const Footer = () => {
             <Text _hover={{ cursor: "pointer" }}>Portfolio</Text>
             <Text _hover={{ cursor: "pointer" }}>Contact us</Text>
           </Flex>
-          <Text fontWeight={700} fontSize={"24px"} mt="1rem">
+          <Text
+            textAlign={{ base: "center", lg: "left" }}
+            fontWeight={700}
+            fontSize={"24px"}
+            mt="1rem"
+          >
             Stay in Conection
           </Text>
           <Flex
@@ -64,6 +69,7 @@ const Footer = () => {
             <Button
               p="0.5rem 1rem"
               bgColor={"#E92129"}
+              fontSize="12px"
               color="white"
               _hover={{ backgroundColor: "" }}
             >
