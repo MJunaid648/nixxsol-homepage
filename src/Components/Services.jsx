@@ -64,8 +64,9 @@ const Services = () => {
         <Flex
           direction={"column"}
           flex="5"
-          p={"2rem 0"}
-          pl="3rem"
+          p={"2rem"}
+          // pl="3rem"
+          textAlign={{base:'center',lg:'left'}}
           gap="1rem"
           alignItems={{ base: "center", lg: "flex-start" }}
           justifyContent={{ base: "center", md: "flex-start" }}

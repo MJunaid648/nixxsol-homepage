@@ -45,7 +45,7 @@ const Hero = () => {
         <Text
           fontSize={{ base: "30px", md: "40px", lg: "70px" }}
           fontWeight={800}
-          textAlign={{ base: "center",md:'left' }}
+          textAlign={{ base: "center", md: "left" }}
           bgClip={"text"}
           color={"transparent"}
           backgroundImage=" linear-gradient(120.79deg, #242424 3.25%, #E92129 75.17%)"
@@ -67,16 +67,20 @@ const Hero = () => {
           fontWeight={800}
           color="#242424"
           fontSize={{ base: "30px", md: "40px", lg: "70px" }}
-          textAlign={{ base: "center",md:'left' }}
+          textAlign={{ base: "center", md: "left" }}
         >
           About Company
         </Text>
         <Flex direction={"column"} w="80%">
-          <Text fontSize={"32px"} fontFamily={"sans-serif"} textAlign={{base:'center',md:'left'}}>
+          <Text
+            fontSize={"32px"}
+            fontFamily={"sans-serif"}
+            textAlign={{ base: "center", md: "left" }}
+          >
             Lorem ipsum dolor sit amet consectetur. Vestibulum nascetur vitae
             sapien{" "}
           </Text>
-          <Text fontSize="20px">
+          <Text fontSize="20px" textAlign={{ base: "center", lg: "left" }}>
             Mattis ornare tincidunt tempus mattis mi vel auctor ipsum venenatis.
             Tellus nunc scelerisque dictum sagittis euismod urna egestas quam.
             In ornare nisl leo odio magna.

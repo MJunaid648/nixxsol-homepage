@@ -6,7 +6,7 @@ import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <Flex direction="column" border="2px solid red">
+    <Flex direction="column">
       <Flex
         display={{ base: "none", md: "block" }}
         position={{ base: "relative", md: "absolute" }}
@@ -20,7 +20,6 @@ const Footer = () => {
         bgColor="black"
         color="white"
         p={{ base: "1rem", md: "5rem 3rem" }}
-        border="2px solid teal"
         alignItems={{ base: "stretch", md: "stretch" }}
         justifyContent={{ base: "stretch", md: "stretch" }}
       >

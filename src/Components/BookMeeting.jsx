@@ -31,7 +31,7 @@ const BookMeeting = () => {
         >
           Book a meeting with us
         </Text>
-        <Text>
+        <Text textAlign={{base:'center',lg:'left'}}>
           Mattis ornare tincidunt tempus mattis mi vel auctor ipsum venenatis.
           Tellus nunc scelerisque dictum sagittis euismod urna egestas quam. In
           ornare nisl leo odio magna.

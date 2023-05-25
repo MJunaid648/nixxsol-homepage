@@ -13,11 +13,9 @@ const Testimonials = () => {
     >
       <Flex
         direction={"column"}
-        // border="2px solid green"
-        //   flex="5"
-        p={"2rem 0"}
-        pl="3rem"
+        p={"2rem"}
         gap="1rem"
+        textAlign={{ base: "center", lg: "left" }}
         alignItems={{ base: "center", lg: "flex-start" }}
         justifyContent={{ base: "center", md: "flex-start" }}
       >
@@ -46,34 +44,25 @@ const Testimonials = () => {
       </Flex>
       {/* second div */}
       <Flex
-        // display={'none'}
         p={{ base: "0.5rem", lg: "" }}
         pr="0"
         direction={"column"}
         alignItems={{ base: "center", lg: "flex-start" }}
         justifyContent={{ base: "center", lg: "flex-start" }}
-        // border="2px solid green"
       >
         <Flex
-          // alignItems={"flex-end"}
-          // border="2px solid blue"
-
           alignItems={{ base: "center", lg: "stretch" }}
           justifyContent={{ base: "center", lg: "flex-start" }}
           p={{ base: "1rem", lg: "0" }}
-          // h={"18rem"}
           gap="2rem"
         >
           {/* card */}
           <Flex
             w={{ base: "", lg: "80%" }}
-            // border="2px solid red"
-            // h="100%"
             direction={{ base: "column", md: "row" }}
             alignItems={{ base: "center", md: "stretch" }}
             justifyContent={{ base: "center", md: "flex-start" }}
             p="1rem"
-            // pb="0.5rem"
             pr={{ base: "1rem", lg: "2rem" }}
             gap="1rem"
             boxShadow={"2px 0px 8px 8px rgba(0, 0, 0, 0.1)"}
@@ -90,7 +79,7 @@ const Testimonials = () => {
               <Text color={"#E4252C"} fontWeight={700} fontSize={"26px"}>
                 Adam Smith
               </Text>
-              <Text overflow="hidden" textOverflow="ellipsis" whiteSpace="wrap">
+              <Text overflow="hidden" textOverflow="ellipsis" whiteSpace="wrap" textAlign={{base:'center',lg:'left'}}>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Imperdiet proin ut urna sit. Varius sed euismod at est, commodo
                 sociis dolor. Elit, suspendisse leo id in eu ut arcu, malesuada.
@@ -104,19 +93,13 @@ const Testimonials = () => {
           <Image
             display={{ base: "none", lg: "block" }}
             src="Frame 1000000912.png"
-            // border="2px solid red"
             w="17%"
             h="80%"
             boxShadow={"2px 0px 8px 8px rgba(0, 0, 0, 0.1)"}
             alignSelf={"flex-end"}
           />
         </Flex>
-        <Flex
-          gap="1rem"
-          alignSelf={"center"}
-          mt="1rem"
-          //  ml="70%"
-        >
+        <Flex gap="1rem" alignSelf={"center"} mt="1rem">
           <Box gap="0.5rem" _hover={{ cursor: "pointer" }}>
             <MdKeyboardArrowLeft
               style={{
