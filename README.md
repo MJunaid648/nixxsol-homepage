@@ -47,3 +47,4 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 ---
 
 Thank you for checking out the Nixxsol Solutions homepage! If you have any questions or feedback, please don't hesitate to reach out.
+**Note:** The Nixxsol Solutions homepage is fully responsive and optimized for all screen devices, ensuring a seamless experience for users.
